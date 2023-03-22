@@ -1,76 +1,160 @@
-/* Global Styles */
+/* Font styles */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
+/* Base styles */
 body {
-	font-family: Fira Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-}
-
-a {
-	color: #07c;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-ul, ol {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-/* Header Styles */
-
+/* Header */
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 10px 20px;
+  background-color: #ffcc00;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
 }
 
-nav li {
-	display: inline-block;
-	margin-right: 20px;
+.nav {
+  display: flex;
 }
 
-nav a {
-	color: #fff;
+.nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
-nav a:hover {
-	color: #07c;
+.nav a:hover {
+  color: #fff;
+  background-color: #f28d00;
 }
 
-h1 {
-	margin: 0;
+/* Homepage */
+.homepage {
+  background-image: url('homepage-bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Main Styles */
-
-main {
-	margin: 20px;
+.homepage h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px #333;
 }
 
-section {
-	margin-bottom: 40px;
+/* Products */
+.products {
+  background-color: #fff;
+  padding: 50px;
 }
 
-h2 {
-	font-size: 28px;
-	margin-bottom: 10px;
+.products h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f28d00;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-p {
-	line-height: 1.5;
-	margin-bottom: 20px
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-item {
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f28d00;
+}
+
+.product-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* History */
+.history {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+.history h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f28d00;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.history-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.history-item img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.history-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f28d00;
+}
+
+.history-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* FAQ */
+.faq {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.faq h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f28d00;
+  text-align: center;
+  margin-bottom:
